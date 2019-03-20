@@ -1,0 +1,16 @@
+<div>custom Table
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th *ngFor="let header of headerData">{{header.colName}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tableRow of tableBodyData">
+          <td *ngFor="let tableCol of tableRow">{{ tableCol }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
